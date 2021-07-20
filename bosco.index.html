@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>页面标题</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+        }
+
+            .header h1 {
+                font-size: 40px;
+            }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+                .navbar a.right {
+                    float: right;
+                }
+
+                .navbar a:hover {
+                    background-color: #ddd;
+                    color: blue;
+                }
+
+        /* 列容器 */
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        /* 创建两个列 */
+        /* 边栏 */
+        .side {
+            -ms-flex: 30%; /* IE10 */
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        /* 主要的内容区域 */
+        .main {
+            -ms-flex: 70%; /* IE10 */
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* 测试图片 */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* 底部 */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+
+        /* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        /* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>WELCOME HERE</h1>
+        <p>HAHAHA</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+        <a href="#" class="right">LINK</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>ABOUT US</h2>
+            <h5>PROFILE</h5>
+            <div class="fakeimg" style="height:200px;">IMAGE</div>
+            <p>WE ARE CHINESE AND KOREAN COUPLES</p>
+            <h3>WHATS MORE</h3>
+            <p>OUR IMAGES</p>
+            <div class="fakeimg" style="height:60px;">IMAGE</div><br>
+            <div class="fakeimg" style="height:60px;">IMAGE</div><br>
+            <div class="fakeimg" style="height:60px;">IMAGE</div>
+        </div>
+        <div class="main">
+            <h2>MAIN</h2>
+            <h5>I DONT KNOW</h5>
+            <div class="fakeimg" style="height:200px;">IMAGE</div>
+            <p>WHO FUCKING CARES</p>
+            <p>DO WHATEVER YOU WANNA DO</p>
+            <br>
+            <h2>MAIN</h2>
+            <h5>NO IDEA</h5>
+            <div class="fakeimg" style="height:200px;">IMAGE</div>
+            <p>GIVE A FUCKING SHIT CARE</p>
+            <p>DO WHAT FUCK YOU WANNA</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>SEE YOU AGAIN</h2>
+    </div>
+
+</body>
+</html>
